@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WEDDING_BELLS" Class="WEDDINGBELLSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-HF21R4KB;Initial Catalog=WEDDING_BELLS;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WEDDING_BELLSConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ADM_AGENCY_REGISTRATION" Member="ADM_AGENCY_REGISTRATIONs">
+    <Type Name="ADM_AGENCY_REGISTRATION">
+      <Column Name="ADM_AGENCY_REGISTRATION_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ADM_AGENCY_TYPE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AGENCY_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CONTACT_PERSON_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADM_CITY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EXPERIENCE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NO_OF_YEARS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PAYMENT_TERMS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPECIALIZATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_AGENCY_TYPE_ADM_AGENCY_REGISTRATION" Member="ADM_AGENCY_TYPE" ThisKey="ADM_AGENCY_TYPE_ID" OtherKey="ADM_AGENCY_TYPE_ID" Type="ADM_AGENCY_TYPE" IsForeignKey="true" />
+      <Association Name="ADM_CITY_ADM_AGENCY_REGISTRATION" Member="ADM_CITY" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CITY" IsForeignKey="true" />
+      <Association Name="ADM_REGISTRATION_ADM_AGENCY_REGISTRATION" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_AGENCY_TYPE" Member="ADM_AGENCY_TYPEs">
+    <Type Name="ADM_AGENCY_TYPE">
+      <Column Name="ADM_AGENCY_TYPE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AGENCY_TPYE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_AGENCY_TYPE_ADM_AGENCY_REGISTRATION" Member="ADM_AGENCY_REGISTRATIONs" ThisKey="ADM_AGENCY_TYPE_ID" OtherKey="ADM_AGENCY_TYPE_ID" Type="ADM_AGENCY_REGISTRATION" />
+      <Association Name="ADM_REGISTRATION_ADM_AGENCY_TYPE" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_CITY" Member="ADM_CITies">
+    <Type Name="ADM_CITY">
+      <Column Name="ADM_CITY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CITY_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PINCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_CITY_ADM_AGENCY_REGISTRATION" Member="ADM_AGENCY_REGISTRATIONs" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_AGENCY_REGISTRATION" />
+      <Association Name="ADM_CITY_ADM_CONTACT_US" Member="ADM_CONTACT_US" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CONTACT_US" />
+      <Association Name="ADM_CITY_ADM_CUSTOMER_REGISTRATION" Member="ADM_CUSTOMER_REGISTRATIONs" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CUSTOMER_REGISTRATION" />
+      <Association Name="ADM_CITY_ADM_EMPLOYEE" Member="ADM_EMPLOYEEs" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_EMPLOYEE" />
+      <Association Name="ADM_CITY_ADM_REGISTRATION" Member="ADM_REGISTRATIONs" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_REGISTRATION" />
+      <Association Name="ADM_REGISTRATION_ADM_CITY" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_CONTACT_US" Member="ADM_CONTACT_US">
+    <Type Name="ADM_CONTACT_US">
+      <Column Name="ADM_CONTACT_US_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="YOUR_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUBJECT" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MESSAGE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADM_CITY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_CITY_ADM_CONTACT_US" Member="ADM_CITY" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CITY" IsForeignKey="true" />
+      <Association Name="ADM_REGISTRATION_ADM_CONTACT_US" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_CUSTOMER_REGISTRATION" Member="ADM_CUSTOMER_REGISTRATIONs">
+    <Type Name="ADM_CUSTOMER_REGISTRATION">
+      <Column Name="ADM_CUSTOMER_REGISTRATION_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUSTOMER_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ADM_CITY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_CITY_ADM_CUSTOMER_REGISTRATION" Member="ADM_CITY" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CITY" IsForeignKey="true" />
+      <Association Name="ADM_REGISTRATION_ADM_CUSTOMER_REGISTRATION" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_CUSTOMIZE_PACKAGE" Member="ADM_CUSTOMIZE_PACKAGEs">
+    <Type Name="ADM_CUSTOMIZE_PACKAGE">
+      <Column Name="ADM_CUSTOMIZE_PACKAGE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AGENCY_TYPE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUSTOMIZE_PACKAGE_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_REGISTRATION_ADM_CUSTOMIZE_PACKAGE" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_EMPLOYEE" Member="ADM_EMPLOYEEs">
+    <Type Name="ADM_EMPLOYEE">
+      <Column Name="ADM_EMPLOYEE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMPLOYEE_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADM_CITY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADM_EMPLOYEE_ATH_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="ADM_CITY_ADM_EMPLOYEE" Member="ADM_CITY" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CITY" IsForeignKey="true" />
+      <Association Name="ADM_REGISTRATION_ADM_EMPLOYEE" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_EMPLOYEE_TYPE" Member="ADM_EMPLOYEE_TYPEs">
+    <Type Name="ADM_EMPLOYEE_TYPE">
+      <Column Name="ADM_EMPLOYEE_TYPE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMPLOYEE_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_REGISTRATION_ADM_EMPLOYEE_TYPE" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_INQUIRY" Member="ADM_INQUIRies">
+    <Type Name="ADM_INQUIRY">
+      <Column Name="ADM_INQUIRY_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FUNCATION_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FUNCATION_TYPE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="ADM_REGISTRATION_ADM_INQUIRY" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_PACKAGE_MASTER" Member="ADM_PACKAGE_MASTERs">
+    <Type Name="ADM_PACKAGE_MASTER">
+      <Column Name="ADM_PACKAGE_MASTER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ADM_PACKAGE_TYPE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PACKAGE_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MRP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SELLING_PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PACKAGE_DETAILS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="ADM_PACKAGE_TYPE_ADM_PACKAGE_MASTER" Member="ADM_PACKAGE_TYPE" ThisKey="ADM_PACKAGE_TYPE_ID" OtherKey="ADM_PACKAGE_TYPE_ID" Type="ADM_PACKAGE_TYPE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_PACKAGE_TYPE" Member="ADM_PACKAGE_TYPEs">
+    <Type Name="ADM_PACKAGE_TYPE">
+      <Column Name="ADM_PACKAGE_TYPE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PACKAGE_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REAMARKS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_PACKAGE_TYPE_ADM_PACKAGE_MASTER" Member="ADM_PACKAGE_MASTERs" ThisKey="ADM_PACKAGE_TYPE_ID" OtherKey="ADM_PACKAGE_TYPE_ID" Type="ADM_PACKAGE_MASTER" />
+      <Association Name="ADM_REGISTRATION_ADM_PACKAGE_TYPE" Member="ADM_REGISTRATION" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_REGISTRATION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_REGISTRATION" Member="ADM_REGISTRATIONs">
+    <Type Name="ADM_REGISTRATION">
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="REGISTRATION_NAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GENDER" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ADM_ATH_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADM_CITY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ADM_REGISTRATION_ADM_AGENCY_REGISTRATION" Member="ADM_AGENCY_REGISTRATIONs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_AGENCY_REGISTRATION" />
+      <Association Name="ADM_REGISTRATION_ADM_AGENCY_TYPE" Member="ADM_AGENCY_TYPEs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_AGENCY_TYPE" />
+      <Association Name="ADM_REGISTRATION_ADM_CITY" Member="ADM_CITies" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_CITY" />
+      <Association Name="ADM_REGISTRATION_ADM_CONTACT_US" Member="ADM_CONTACT_US" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_CONTACT_US" />
+      <Association Name="ADM_REGISTRATION_ADM_CUSTOMER_REGISTRATION" Member="ADM_CUSTOMER_REGISTRATIONs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_CUSTOMER_REGISTRATION" />
+      <Association Name="ADM_REGISTRATION_ADM_CUSTOMIZE_PACKAGE" Member="ADM_CUSTOMIZE_PACKAGEs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_CUSTOMIZE_PACKAGE" />
+      <Association Name="ADM_REGISTRATION_ADM_EMPLOYEE" Member="ADM_EMPLOYEEs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_EMPLOYEE" />
+      <Association Name="ADM_REGISTRATION_ADM_EMPLOYEE_TYPE" Member="ADM_EMPLOYEE_TYPEs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_EMPLOYEE_TYPE" />
+      <Association Name="ADM_REGISTRATION_ADM_INQUIRY" Member="ADM_INQUIRies" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_INQUIRY" />
+      <Association Name="ADM_REGISTRATION_ADM_PACKAGE_TYPE" Member="ADM_PACKAGE_TYPEs" ThisKey="ADM_REGISTRATION_ID" OtherKey="ADM_REGISTRATION_ID" Type="ADM_PACKAGE_TYPE" />
+      <Association Name="ADM_CITY_ADM_REGISTRATION" Member="ADM_CITY" ThisKey="ADM_CITY_ID" OtherKey="ADM_CITY_ID" Type="ADM_CITY" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

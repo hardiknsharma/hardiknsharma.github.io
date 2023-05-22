@@ -1,15 +1,18 @@
-f<!DOCTYPE html>
-<html lang="en">
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Index.aspx.vb" Inherits="Index" %>
 
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Wedding Bells.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- Favicons -->Call Us
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -34,15 +37,15 @@ f<!DOCTYPE html>
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
-
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+    <form id="form1" runat="server">
+    <div>
+     <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="Index.aspx" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
        <!-- <img src="assets/img/fav.png" alt=""> -->
         <h1>Wedding Bells<span>.</span></h1>
@@ -63,7 +66,7 @@ f<!DOCTYPE html>
         </ul>
       </nav><!-- .navbar -->
 
-      <a class="btn-book-a-table" href="#book-a-table">Register/Login</a>
+      <%--<a class="btn-book-a-table" href="#book-a-table">Register/Login</a>--%>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -689,63 +692,7 @@ f<!DOCTYPE html>
     </section><!-- End Chefs Section -->
 
     <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Book A Registration</h2>
-          <p><span>Register</span> With Us</p>
-        </div>
-
-        <div class="row g-0">
-
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/contact.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your request was sent. We will call back or send an Email to confirm your Inquiry. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Register.</button></div>
-            </form>
-          </div><!-- End Reservation Form -->
-
-        </div>
-
-      </div>
-    </section><!-- End Book A Table Section -->
+    <!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery section-bg">
@@ -756,7 +703,7 @@ f<!DOCTYPE html>
           <p>Check <span>Our Gallery</span></p>
         </div>
 
-        <div class="g0allery-slider swiper">
+        <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/g-1.jpg"><img src="assets/img/gallery/g-1.jpg" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/g-2.jpg"><img src="assets/img/gallery/g-2.jpg" class="img-fluid" alt=""></a></div>
@@ -874,7 +821,6 @@ f<!DOCTYPE html>
                   ₹325 per plate onwards
                 </p>
               </div><!-- Menu Item -->
-                
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/agencies/caterer-5.jpg" class="glightbox"><img src="assets/img/agencies/caterer-5.jpg" class="menu-img img-fluid" alt=""></a>
@@ -886,7 +832,7 @@ f<!DOCTYPE html>
                   ₹275 per plate onwards
                 </p>
               </div><!-- Menu Item -->
-              
+
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/agencies/caterer-6.jpg" class="glightbox"><img src="assets/img/agencies/caterer-6.jpg" class="menu-img img-fluid" alt=""></a>
                 <h4>Bajrang Cateres</h4>
@@ -907,7 +853,7 @@ f<!DOCTYPE html>
               <p>Agencies</p>
               <h3>Photography</h3>
             </div>
-            
+
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
@@ -1365,28 +1311,46 @@ f<!DOCTYPE html>
           </div><!-- End Info Item -->
 
         </div>
+          <br />
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <form action="" method="post" role="form" class="php-email-form p-3 p-md-5">
           <div class="row">
             <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <asp:TextBox ID="txtYourName" class="form-control" runat="server"   placeholder="Your Name" required></asp:TextBox>
+              <br />
             </div>
             <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <asp:TextBox ID="txtYourEmail" class="form-control" runat="server"   placeholder="Your Email" required></asp:TextBox>
+                 
+            
             </div>
           </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <div class="row">
+              <div class="col-xl-6 form-group">
+                   <asp:TextBox ID="txtSubject" class="form-control" runat="server"   placeholder="Subject" required></asp:TextBox>
+                 <br />
+               </div>
+               <div class="col-xl-6 form-group">
+                <asp:TextBox ID="txtMobileNo" class="form-control" runat="server"   placeholder="Mobile No" required></asp:TextBox>
+                    
+            <br />
+            </div>
           </div>
+
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+             
+              <textarea id="txtMessage" rows="2" cols="20" class="form-control"  runat="server"   placeholder="Message" required></textarea>
+           
           </div>
-          <div class="my-3">
+          <%--<div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>--%>
+         <br />
+          <div class="text-center">
+              <asp:Button ID="BtnSubmit" runat="server" Text="Submit" type="submit" BorderColor="Black" ForeColor="#FF3300" Width="110px"></asp:Button>
+              </div>
+             </div>
         </form>
         <!--End Contact Form -->
 
@@ -1457,7 +1421,7 @@ f<!DOCTYPE html>
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Weeding_Bells</a>
+        Designed by <a href="http://localhost:54608/Yummy/Index.aspx">Weeding_Bells</a>
       </div>
     </div>
 
@@ -1478,7 +1442,7 @@ f<!DOCTYPE html>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+    </div>
+    </form>
 </body>
-
 </html>

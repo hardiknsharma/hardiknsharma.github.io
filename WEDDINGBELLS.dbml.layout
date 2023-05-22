@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 23" name="WEDDINGBELLS">
+  <DataContextMoniker Name="/WEDDINGBELLSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="09443cf2-b857-4332-b895-51caa711d2f6" absoluteBounds="6.25, 6.5, 2, 3.5016097005208318">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_AGENCY_REGISTRATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af245bff-0834-43e0-80c9-6394ccfbeb73" absoluteBounds="6.265, 6.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c985243a-7818-4711-8c20-4877eea67ade" absoluteBounds="3.5, 7.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_AGENCY_TYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68235ad5-3386-446a-842e-2c1d60a0b2c3" absoluteBounds="3.515, 8.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" absoluteBounds="3.5, 10.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_CITY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bde1f0a0-e3b5-4ce5-a285-aeb66a2bfe7e" absoluteBounds="3.515, 10.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46ae65d1-d469-4218-8ed4-c091c3a5702b" absoluteBounds="6.25, 11.25, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_CONTACT_US" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc1521ff-9f22-4864-ac42-36cb0ee61dbd" absoluteBounds="6.265, 11.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35d23cf2-57fe-4288-a590-eb5f006a4d0d" absoluteBounds="9.25, 12.25, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_CUSTOMER_REGISTRATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20fa242d-c4fa-4322-b80a-5d5235859801" absoluteBounds="9.265, 12.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e737c1a9-7e8a-4543-bda6-019ec4b1a322" absoluteBounds="3.5, 17.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_CUSTOMIZE_PACKAGE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5a36e13-6371-481c-8e58-5daa771e283f" absoluteBounds="3.515, 18.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="433e9fe7-32fd-4dc0-9ece-300008c04e19" absoluteBounds="9.25, 8.125, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_EMPLOYEE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2f9101e-c466-4bce-a2bb-273c747462ab" absoluteBounds="9.265, 8.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dea4b7c7-e5d2-42db-b70f-7a7de6eccce8" absoluteBounds="3.5, 12.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_EMPLOYEE_TYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05ece2d8-a92a-4348-a16a-dbabd2081ffd" absoluteBounds="3.515, 12.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb2eced0-528d-4c5f-98f5-cd4bb9fb9547" absoluteBounds="3.5, 20.25, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_INQUIRY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e92ce3c-d731-4c91-82dc-7be94af95d53" absoluteBounds="3.515, 20.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f091b6a-d3a2-4236-b142-89be5082f12a" absoluteBounds="6.25, 14.875, 2, 2.1554996744791683">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_PACKAGE_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d4e18ea-f41c-488d-a5c2-376d031fae30" absoluteBounds="6.265, 15.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fb9f985-e7de-497f-a4ea-4a2cf0d3cd57" absoluteBounds="3.5, 15.125, 2, 1.5785953776041684">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_PACKAGE_TYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4c069f2-237c-4085-9413-d633817b990c" absoluteBounds="3.515, 15.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a28c249-e321-407b-ac5d-3708387bbf1a" absoluteBounds="0.75, 14, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18a664db-b638-409c-8c2d-b43415bcae4a" absoluteBounds="0.765, 14.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 8.66429768880208); (6.25 : 8.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_AGENCY_TYPE/ADM_AGENCY_TYPE_ADM_AGENCY_REGISTRATION" />
+      <nodes>
+        <classShapeMoniker Id="c985243a-7818-4711-8c20-4877eea67ade" />
+        <classShapeMoniker Id="09443cf2-b857-4332-b895-51caa711d2f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.125); (5.875 : 9.75); (5.875 : 10.3766097005208); (6.25 : 10.0016097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_CITY/ADM_CITY_ADM_AGENCY_REGISTRATION" />
+      <nodes>
+        <classShapeMoniker Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" />
+        <classShapeMoniker Id="09443cf2-b857-4332-b895-51caa711d2f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.4767976888021); (6.25 : 11.4767976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_CITY/ADM_CITY_ADM_CONTACT_US" />
+      <nodes>
+        <classShapeMoniker Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" />
+        <classShapeMoniker Id="46ae65d1-d469-4218-8ed4-c091c3a5702b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.9142976888021); (9.66666716666666 : 10.9142976888021 : JumpStart); (9.83333383333333 : 10.9142976888021 : JumpEnd); (10.25 : 10.9142976888021); (10.25 : 12.25)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_CITY/ADM_CITY_ADM_CUSTOMER_REGISTRATION" />
+      <nodes>
+        <classShapeMoniker Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" />
+        <classShapeMoniker Id="35d23cf2-57fe-4288-a590-eb5f006a4d0d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.4263037695312); (9.25 : 10.4263037695312)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_CITY/ADM_CITY_ADM_EMPLOYEE" />
+      <nodes>
+        <classShapeMoniker Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" />
+        <classShapeMoniker Id="433e9fe7-32fd-4dc0-9ece-300008c04e19" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.9142976888021); (6.25 : 15.9142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_PACKAGE_TYPE/ADM_PACKAGE_TYPE_ADM_PACKAGE_MASTER" />
+      <nodes>
+        <classShapeMoniker Id="3fb9f985-e7de-497f-a4ea-4a2cf0d3cd57" />
+        <classShapeMoniker Id="4f091b6a-d3a2-4236-b142-89be5082f12a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 14); (1.75 : 7.15625); (6.25 : 7.15625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_AGENCY_REGISTRATION" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="09443cf2-b857-4332-b895-51caa711d2f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 14); (2.2812525 : 8.66429768880208); (3.5 : 8.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_AGENCY_TYPE" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="c985243a-7818-4711-8c20-4877eea67ade" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 14); (1.2187475 : 10.9142976888021); (1.66666666666667 : 10.9142976888021 : JumpStart); (1.83333333333333 : 10.9142976888021 : JumpEnd); (2.19791916666667 : 10.9142976888021 : JumpStart); (2.36458583333333 : 10.9142976888021 : JumpEnd); (3.5 : 10.9142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_CITY" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.54687875 : 14); (2.54687875 : 12.1017976888021); (6.25 : 12.1017976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_CONTACT_US" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="46ae65d1-d469-4218-8ed4-c091c3a5702b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.3694482421875); (8.91666666666667 : 14.3694482421875 : JumpStart); (9.08333333333333 : 14.3694482421875 : JumpEnd); (9.25 : 14.3694482421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_CUSTOMER_REGISTRATION" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="35d23cf2-57fe-4288-a590-eb5f006a4d0d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 16.5401025390625); (1.75 : 18.6354484049479); (2.19791916666667 : 18.6354484049479 : JumpStart); (2.36458583333333 : 18.6354484049479 : JumpEnd); (3.5 : 18.6354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_CUSTOMIZE_PACKAGE" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="e737c1a9-7e8a-4543-bda6-019ec4b1a322" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.486027390625); (3.25 : 15.486027390625); (3.25 : 14.625); (9 : 14.625); (9 : 12); (9.7500005 : 12); (9.7500005 : 10.6651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_EMPLOYEE" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="433e9fe7-32fd-4dc0-9ece-300008c04e19" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.01562625 : 14); (2.01562625 : 13.2187475); (2.19791916666667 : 13.2187475 : JumpStart); (2.36458583333333 : 13.2187475 : JumpEnd); (2.46354541666667 : 13.2187475 : JumpStart); (2.63021208333333 : 13.2187475 : JumpEnd); (3.5 : 13.2187475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_EMPLOYEE_TYPE" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="dea4b7c7-e5d2-42db-b70f-7a7de6eccce8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 16.5401025390625); (2.2812525 : 21.5200512695313); (3.5 : 21.5200512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_INQUIRY" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="bb2eced0-528d-4c5f-98f5-cd4bb9fb9547" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.0755649648438); (3.5 : 16.0755649648438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_REGISTRATION/ADM_REGISTRATION_ADM_PACKAGE_TYPE" />
+      <nodes>
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+        <classShapeMoniker Id="3fb9f985-e7de-497f-a4ea-4a2cf0d3cd57" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 11.3401990332031); (2.36458583333333 : 11.3401990332031 : JumpStart); (2.19791916666667 : 11.3401990332031 : JumpEnd); (1.83333333333333 : 11.3401990332031 : JumpStart); (1.66666666666667 : 11.3401990332031 : JumpEnd); (1.48437375 : 11.3401990332031); (1.48437375 : 14)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WEDDINGBELLSDataContext/ADM_CITY/ADM_CITY_ADM_REGISTRATION" />
+      <nodes>
+        <classShapeMoniker Id="ea0bf955-961e-4b3f-83e0-78b0dff9d3fe" />
+        <classShapeMoniker Id="4a28c249-e321-407b-ac5d-3708387bbf1a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
